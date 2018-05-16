@@ -1,6 +1,6 @@
 Shadowsocksr-libev for OpenWrt/LEDE
 ===
-版本 2.5.7  2017.8.03破娃酱最后一commit
+版本 2.5.6  2017.8.03破娃酱最后一commit
 
 相比2016-stable分支,有如下不同
 
