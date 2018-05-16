@@ -1,30 +1,30 @@
 Shadowsocksr-libev for OpenWrt/LEDE
 ===
-版本 2.5.6  2017.6.13破娃酱最后一commit
+版本 2.5.7  2017.8.03破娃酱最后一commit
 
 相比2016-stable分支,有如下不同
 
-1、支持auth_chain_a;
+1、支持`auth_chain_b`;
 
 2、ssr-tunnel合并进ssr-local
 
 3、去掉ssr-server
 
 
-为编译[此固件][O]所需依赖包而写的Makefile,在CC 15.05,CC 15.05.1,LEDE 17.01.1 17.01.2编译成功
+为编译[此固件][O]所需依赖包而写的Makefile,在CC 15.05,CC 15.05.1,LEDE 17.01.1 17.01.2 17.01.4编译成功
 
 简介
 ---
 
-本项目是 [shadowsocksr-libev][1] 在 OpenWrt 上的移植 ,写法参考https://github.com/shadowsocks/openwrt-shadowsocks/ 
- 
-可与[luci-app-shadowsocksR][P]搭配使用
+本项目是 [shadowsocksr-libev](https://github.com/shadowsocksr-backup/shadowsocksr-libev) 在 OpenWrt 上的移植 ,写法参考https://github.com/shadowsocks/openwrt-shadowsocks/
 
- 
+可与[luci-app-shadowsocksR](https://github.com/AlexZhuo/luci-app-shadowsocksR)搭配使用
+
+
 特性
 ---
 
-软件包只包含 [shadowsocksr-libev][1] 的可执行文件
+软件包只包含 [shadowsocksr-libev](https://github.com/shadowsocksr-backup/shadowsocksr-libev) 的可执行文件
 可编译两种版本
 
  - shadowsocksr-libev
@@ -33,7 +33,7 @@ Shadowsocksr-libev for OpenWrt/LEDE
    客户端/
    └── usr/
        └── bin/
-           ├── ssrr-local       // 提供 SOCKS 代理和旧版ssr-tunnel的端口转发功能 
+           ├── ssrr-local       // 提供 SOCKS 代理和旧版ssr-tunnel的端口转发功能
            └── ssrr-redir      // 提供透明代理, 从 v2.2.0 开始支持 UDP
    ```
 

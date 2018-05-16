@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=shadowsocksR-libev
-PKG_VERSION:=2.5.6
+PKG_VERSION:=2.5.7
 PKG_RELEASE:=2
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE).tar.gz
 PKG_SOURCE_URL:=https://github.com/shadowsocksr-backup/shadowsocksr-libev.git
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=f713aa981169d35ff9483b295d1209c35117d70c
+PKG_SOURCE_VERSION:=e2373d7199102f383b741da148b989c7c1e8832e
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=breakwa11
 
@@ -64,7 +64,7 @@ endef
 Package/shadowsocksr-libev-server-mbedtls/conffiles = $(Package/shadowsocksr-libev-server/conffiles)
 
 
-CONFIGURE_ARGS += --disable-ssp --disable-documentation --disable-assert 
+CONFIGURE_ARGS += --disable-ssp --disable-documentation --disable-assert
 
 ifeq ($(BUILD_VARIANT),openssl)
 	CONFIGURE_ARGS += --with-crypto-library=openssl
